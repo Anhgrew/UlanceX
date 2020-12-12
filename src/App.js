@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
+import Switch from 'react-ios-switch'
+
+// import Advanced from './examples/Advanced'
+// import Simple from './examples/Simple'
+import SwipeCard from './bindings/SwipeCard'
 
 function App() {
+  // const [showAdvanced, setShowAdvanced] = useState(true)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <SwipeCard />
+      {/* {showAdvanced ?  : <Simple />}
+      <div className='row'>
+        <p style={{ color: '#fff' }}>Change Style</p> <Switch checked={showAdvanced} onChange={setShowAdvanced} />
+      </div> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
