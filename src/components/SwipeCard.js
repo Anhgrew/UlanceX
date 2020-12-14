@@ -16,25 +16,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-// const db = [
-//     {
-//         name: 'Anhbren',
-//         url: './img/anhbren.jpg'
-//     },
-//     {
-//         name: 'Anhbren2',
-//         url: './img/yy.png'
-//     },
-//     {
-//         name: 'Anhbren3',
-//         url: './img/kk.png'
-//     },
-//     {
-//         name: 'Anhbren4',
-//         url: './img/ll.jpg'
-//     }
-
-// ]
 
 
 // This fixes issues with updating characters state forcing it to use the current state and not the state that was active when the card was created.
@@ -42,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
 const SwipeCard = ({ db, alreadyRemovedArr, loadCards }) => {
 
     console.log(loadCards);
-    <button onClick={() => loadCards()}>Add</button>
     const alreadyRemoved = alreadyRemovedArr
     let charactersState = db
     const classes = useStyles();

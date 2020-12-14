@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
-import SwipeCard from '../components/SwipeCard';
-import { loadCards } from '../reducers/SwipeCardReducer';
-
+import SwipeCard from '../components/SwipeCard'
+import { loadCards } from '../actions/SwipeCardAction'
 const mapStateToProps = (state) => {
     console.log(state)
     return {

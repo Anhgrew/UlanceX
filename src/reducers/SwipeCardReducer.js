@@ -1,5 +1,4 @@
-import { LOAD_CARDS, SET_TODO } from '../reducers/Constant';
-
+import * as types from '../constants/ActionTypes';
 const initialState = {
     items: [
         {
@@ -22,19 +21,9 @@ const initialState = {
     alreadyRemovedArr: []
 };
 
-export const loadCards = () => ({
-    type: LOAD_CARDS,
-});
-
-// export const setTodo = (items) => ({
-//     type: SET_TODO,
-//     payload: items
-// });
-
-
 const SwipeCardReducer = (state = initialState, action) => {
     switch (action.type) {
-        case LOAD_CARDS:
+        case types.LOAD_CARDS:
             return {
                 ...state,
                 items: [...state.items]
